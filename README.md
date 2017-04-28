@@ -1,7 +1,7 @@
 Fleet Asset Project MRO Task Issue for odoo 10
 =============================
 This module link the fleet, project, and asset (MRO)
-
+When you create a vehicle
 -------------
         * one project with the same vehicle name will be created under the project menu.
         * one asset with the same vehicle name will be created under the maintenance menu.
