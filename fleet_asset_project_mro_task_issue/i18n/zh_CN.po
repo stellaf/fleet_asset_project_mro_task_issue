@@ -1,0 +1,104 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* fleet_task_issue
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-02-06 18:28+0000\n"
+"PO-Revision-Date: 2017-02-06 18:28+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fleet_task_issue
+#: model:ir.model.fields,field_description:fleet_task_issue.field_fleet_vehicle_analytic_account_id
+msgid "Analytic Account"
+msgstr "分析账户"
+
+#. module: fleet_task_issue
+#: model:ir.ui.view,arch_db:fleet_task_issue.fleet_vehicle_view_form
+msgid "Analytic accounts"
+msgstr "分析账户"
+
+#. module: fleet_task_issue
+#: model:ir.model.fields,field_description:fleet_task_issue.field_fleet_vehicle_log_services_invoice_id
+msgid "Facture"
+msgstr "账单"
+
+#. module: fleet_task_issue
+#: model:ir.model,name:fleet_task_issue.model_fleet_vehicle
+msgid "Information on a vehicle"
+msgstr "车辆上的信息"
+
+#. module: fleet_task_issue
+#: model:ir.ui.view,arch_db:fleet_task_issue.fleet_vehicle_view_form
+msgid "Issues"
+msgstr "议题"
+
+#. module: fleet_task_issue
+#: model:ir.ui.view,arch_db:fleet_task_issue.fleet_vehicle_view_form
+msgid "SW HW logbook"
+msgstr "电子系统变更记录"
+
+#. module: fleet_task_issue
+#: model:ir.model.fields,field_description:fleet_task_issue.field_fleet_vehicle_swhw_task_count
+msgid "SWHWlogbook Tasks"
+msgstr "电子系统变更记录任务"
+
+#. module: fleet_task_issue
+#: model:ir.model,name:fleet_task_issue.model_fleet_vehicle_log_services
+msgid "Services for vehicles"
+msgstr "车辆服务"
+
+#. module: fleet_task_issue
+#: model:ir.ui.view,arch_db:fleet_task_issue.fleet_vehicle_view_form
+msgid "Show all issues for this vehicle"
+msgstr "显示所有的问题"
+
+#. module: fleet_task_issue
+#: model:ir.ui.view,arch_db:fleet_task_issue.fleet_vehicle_view_form
+msgid "Show all tasks for this vehicle"
+msgstr "显示所有的任务"
+
+#. module: fleet_task_issue
+#: model:ir.ui.view,arch_db:fleet_task_issue.fleet_vehicle_view_form
+msgid "Show software hardware logbook for this vehicle"
+msgstr "显示电子系统软硬件的变更记录"
+
+#. module: fleet_task_issue
+#: model:ir.ui.view,arch_db:fleet_task_issue.fleet_vehicle_view_form
+msgid "Show workshop task for this vehicle"
+msgstr "显示修理车间的任务"
+
+#. module: fleet_task_issue
+#: model:ir.ui.view,arch_db:fleet_task_issue.fleet_vehicle_view_form
+msgid "Tasks"
+msgstr "任务"
+
+#. module: fleet_task_issue
+#: model:ir.model.fields,field_description:fleet_task_issue.field_fleet_vehicle_issue_count
+#: model:ir.ui.menu,name:fleet_task_issue.fleet_vehicle_issue_track_menu
+msgid "Vehicle Issues"
+msgstr "问题和需求"
+
+#. module: fleet_task_issue
+#: model:ir.model.fields,field_description:fleet_task_issue.field_fleet_vehicle_task_count
+#: model:ir.ui.menu,name:fleet_task_issue.fleet_vehicle_task_menu
+msgid "Vehicle Tasks"
+msgstr "车辆任务"
+
+#. module: fleet_task_issue
+#: model:ir.ui.view,arch_db:fleet_task_issue.fleet_vehicle_view_form
+msgid "Workshop tasks"
+msgstr "车间的任务"
+
+#. module: fleet_task_issue
+#: model:ir.model.fields,field_description:fleet_task_issue.field_fleet_vehicle_wkshop_task_count
+msgid "workshop Tasks"
+msgstr "车间的任务"
+

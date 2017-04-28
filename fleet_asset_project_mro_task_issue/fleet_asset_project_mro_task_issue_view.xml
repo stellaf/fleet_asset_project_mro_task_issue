@@ -1,0 +1,69 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<odoo>
+        <record model="ir.ui.view" id = "fleet_vehicle_view_form">
+            <field name="name">fleet.vehicle.form</field>
+            <field name="model">fleet.vehicle</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_view_form"/>
+            <field name="arch" type = "xml">
+                <xpath expr="/form/sheet/group[2]/group/field[4]" position="after">
+                    <group string="Analytic accounts">
+                        <field name="analytic_account_id" readonly="1"/>
+                        <field name="asset_id" readonly="1"/>
+                    </group>
+                </xpath>
+                <xpath expr="//button[@name='return_action_to_open']" position="before">
+                    <button name="action_view_alltasks"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-tasks"
+                            help="Show all tasks for this vehicle" >
+                            <field name="task_count" widget="statinfo" string="Tasks"/>
+                    </button>
+                    <button name="action_view_allissues"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-bug"
+                            help="Show all issues for this vehicle" >
+                            <field name="issue_count" widget="statinfo" string="Issues"/>
+                    </button>
+                    <button name="action_view_attachments"
+                            class="oe_stat_button"
+                            type="object"
+                            icon="fa-files-o"
+                            help="Show attached documents for this vehicle" >
+                            <field name="doc_count" widget="statinfo" string="Attachments"/>
+                    </button>
+                    <button name="action_view_mro_request"
+                            class="oe_stat_button"
+                            type="object"
+                            icon="fa-cogs"
+                            help="Show maintenance request for this vehicle" >
+                            <field name="mrorequest_count" widget="statinfo" string="MRO Request"/>
+                    </button>
+                    <button name="action_view_mroorders"
+                            class="oe_stat_button"
+                            type="object"
+                            icon="fa-cogs"
+                            help="Show maintenance orders (MRO) for this vehicle" >
+                            <field name="mroorder_count" widget="statinfo" string="MRO Order"/>
+                    </button>
+                </xpath> 
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id = "fleet_vehicle_log_services_view_form">
+            <field name="name">fleet.vehicle.log.services.form</field>
+            <field name="model">fleet.vehicle.log.services</field>
+            <field name="inherit_id" ref="fleet.fleet_vehicle_log_services_view_form"/>
+            <field name="arch" type = "xml">
+                <xpath expr="/form/sheet/group[2]/group/field[4]" position="after">
+                            <field name="invoice_id" readonly="0"/>
+                </xpath>
+            </field>
+        </record>
+        <menuitem action="project.action_view_task" name ="Vehicle Tasks" parent="fleet.fleet_vehicles" sequence="10" id="fleet_vehicle_task_menu" />
+        <menuitem action="project_issue.project_issue_categ_act0" name="Vehicle Issues" parent="fleet.fleet_vehicles"  sequence="11"  id="fleet_vehicle_issue_track_menu" />
+        <menuitem action="mro.action_requests" name="Maintenance Request" parent="fleet.fleet_vehicles"  sequence="12"  id="fleet_vehicle_mrorequest_menu" />
+        <menuitem action="mro.action_orders" name="Maintenance Orders" parent="fleet.fleet_vehicles"  sequence="13"  id="fleet_vehicle_mroorder_menu" />
+</odoo>
+
