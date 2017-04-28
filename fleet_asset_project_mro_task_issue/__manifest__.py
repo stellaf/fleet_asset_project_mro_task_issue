@@ -43,8 +43,10 @@ when you create one vehicle
         * menu for task, issues, maintenance request and maintenance orders are added to fleet_vehicle menu
         * the existed vehicle will also have asset/project created for it.
 
-        * Knowing bugs: Backup your database before you install this apps. 
-          The asset will not be removed when you uninstall this app. You need to remove all the maintenance orders/requests that you created, and then remove all the assets that are created.
+        * Knowing bugs: 
+		* Backup your database before you install this apps. 
+        * If you uninstall the apps, you shall manually remove all the assets created by this apps. by remove all the maintenance orders/requests first.
+		* If you uninstall the apps, you shall manually remove all the project/analytic accounts created by this apps. by remove all the maintenance orders/requests first.
     """,
     "category": 'Managing vehicles tasks and issues',
     "sequence": 3,
